@@ -30,13 +30,17 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'A/Classes/**/*'
+  s.source_files = 'A/Classes/*'
+  
+  s.subspec 'Target' do |ss|
+    ss.source_files = 'A/Classes/Target/*.{h,m}'
+  end
   
   # s.resource_bundles = {
   #   'A' => ['A/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+#   s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
