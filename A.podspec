@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'A'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Module A.'
 
 # This description is used to generate tags and improve search results.
@@ -30,17 +30,24 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'A/Classes/**/*.{h,m}'
+#  s.source_files = 'A/Classes/**/*.{h,m}'
   
-#  s.subspec 'Target' do |ss|
-#    ss.source_files = 'A/Classes/Target/*.{h,m}'
-#  end
+  s.subspec 'Target' do |ss|
+    ss.dependency 'A/AViewController'
+    ss.source_files = 'A/Classes/Target/*.{h,m}'
+  end
+  
+  s.subspec 'AViewController' do |ss|
+    ss.source_files = 'A/Classes/AViewController/*.{h,m}'
+  end
+  
+  
   
   # s.resource_bundles = {
   #   'A' => ['A/Assets/*.png']
   # }
 
-#   s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

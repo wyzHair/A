@@ -18,5 +18,14 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "A/Classes/**/*.{h,m}"
+  "subspecs": [
+    {
+      "name": "Target",
+      "source_files": "A/Classes/Target/*.{h,m}"
+    },
+    {
+      "name": "AViewController",
+      "source_files": "A/Classes/AViewController/*.{h,m}"
+    }
+  ]
 }
