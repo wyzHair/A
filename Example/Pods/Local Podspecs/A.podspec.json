@@ -1,9 +1,9 @@
 {
   "name": "A",
   "version": "0.1.0",
-  "summary": "A short description of A.",
+  "summary": "Module A.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/yunze/A",
+  "homepage": "https://github.com/wyzHair/A",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,17 +12,11 @@
     "yunze": "239780551@qq.com"
   },
   "source": {
-    "git": "https://github.com/yunze/A.git",
+    "git": "https://github.com/wyzHair/A.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "A/Classes/*",
-  "subspecs": [
-    {
-      "name": "Target",
-      "source_files": "A/Classes/Target/*.{h,m}"
-    }
-  ]
+  "source_files": "A/Classes/**/*.{h,m}"
 }

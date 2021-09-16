@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'A'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of A.'
+  s.summary          = 'Module A.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,20 +21,20 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/yunze/A'
+  s.homepage         = 'https://github.com/wyzHair/A'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'yunze' => '239780551@qq.com' }
-  s.source           = { :git => 'https://github.com/yunze/A.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/wyzHair/A.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'A/Classes/*'
+  s.source_files = 'A/Classes/**/*.{h,m}'
   
-  s.subspec 'Target' do |ss|
-    ss.source_files = 'A/Classes/Target/*.{h,m}'
-  end
+#  s.subspec 'Target' do |ss|
+#    ss.source_files = 'A/Classes/Target/*.{h,m}'
+#  end
   
   # s.resource_bundles = {
   #   'A' => ['A/Assets/*.png']
